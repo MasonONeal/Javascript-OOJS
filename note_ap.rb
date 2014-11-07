@@ -5,8 +5,15 @@
 
 class NoteList
 
-  def add
+  def add (notes)
+    @notes = notes
 
+    # for debugging
+    puts "inside"
+    puts @notes.inspect
+
+    # add new note
+    notes  << ["Test2", "2 here is my note text", "test status 2"]
   end
 
 end
@@ -25,7 +32,17 @@ puts notes.inspect
 a = gets.chomp
 
 
+# test
 
+puts notes.inspect
+puts "step 1 before"
+a = gets.chomp
+
+note_list.add (notes)
+puts "step 2 after"
+b = gets.chomp
+
+puts notes.inspect
 
 # start display
 
