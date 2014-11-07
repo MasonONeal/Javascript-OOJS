@@ -14,16 +14,17 @@ class NoteList
     puts "Enter Note Text:"
     text = gets.chomp
 
-    puts "Enter Note Title:"
+    puts "Enter Note Status:"
     status = gets.chomp
 
-    note_array = []
-    note_array << title << text << status
+    @note_array = []
+    @note_array << title << text << status
     puts @note_array.inspect
+
     puts "---"
     # for debugging
     puts "inside"
-    puts @notes.inspect
+    puts @note_array.inspect
 
     # add new note
     notes  << ["Test2", "2 here is my note text", "test status 2"]
