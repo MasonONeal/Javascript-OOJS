@@ -6,6 +6,7 @@
 class NoteList
 
   def add
+
   end
 
 end
