@@ -8,6 +8,19 @@ class NoteList
   def add (notes)
     @notes = notes
 
+    puts "Enter Note Title:"
+    title = gets.chomp
+
+    puts "Enter Note Text:"
+    text = gets.chomp
+
+    puts "Enter Note Title:"
+    status = gets.chomp
+
+    note_array = []
+    note_array << title << text << status
+    puts @note_array.inspect
+    puts "---"
     # for debugging
     puts "inside"
     puts @notes.inspect
@@ -18,6 +31,8 @@ class NoteList
 
 end
 
+#
+puts "start initialize"
 
 # initialize variables
 choice = ""
@@ -26,9 +41,11 @@ number_of_notes = 0
 notes = []
 notes << ["Test", "here is my note text", "test status"]
 
-notes = NoteList.new
+note_list = NoteList.new
 
-puts notes.inspect
+puts "notes array"
+puts notes
+
 a = gets.chomp
 
 
