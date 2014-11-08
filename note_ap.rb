@@ -49,7 +49,7 @@ note_list = NoteList.new
     a = gets.chomp
 
 puts
-puts "Note Taker"
+puts "Simple Note App"
 puts
 puts "Menu:"
 puts
