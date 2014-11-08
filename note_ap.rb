@@ -44,11 +44,6 @@ notes << ["Test", "here is my note text", "test status"]
 
 note_list = NoteList.new
 
-    #pause
-    puts "notes array at start:"
-    puts notes
-    a = gets.chomp
-
 puts
 puts "Simple Note App"
 puts
