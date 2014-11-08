@@ -25,6 +25,7 @@ class NoteList
     puts @note_array.inspect
 
     # add new note
+    number_of_notes =+ 1
     notes << @note_array
   end
 
@@ -60,7 +61,13 @@ until choice == 'x' do
   when 'l'
     puts
     puts "Notes list:"
-    puts notes.inspect
+    puts
+    notes.each do |note|
+      puts "Title: " + note[0]
+      puts "Text: " + note[1]
+      puts
+    end
+
     puts
     # note_list.show
   when 'a'
