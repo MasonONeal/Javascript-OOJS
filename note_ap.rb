@@ -19,11 +19,6 @@ class NoteList
     @note_array << title << text << status
     puts @note_array.inspect
 
-    puts "---"
-    # for debugging
-    puts "inside"
-    puts @note_array.inspect
-
     # add new note
     number_of_notes =+ 1
     notes << @note_array
@@ -60,13 +55,14 @@ until choice == 'x' do
     notes.each do |note|
       puts "Title: " + note[0]
       puts "Text: " + note[1]
+      puts "Text: " + note[2]
       puts
     end
 
     puts
     # note_list.show
   when 'a'
-    note_list.add (notes)
+    notes = note_list.add (notes)
   end
 end
 
