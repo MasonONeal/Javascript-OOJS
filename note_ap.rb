@@ -1,10 +1,7 @@
 
 ### simple notes program
 
-# classes
-
 class NoteList
-
   def add (notes)
     @notes = notes
 
@@ -14,7 +11,6 @@ class NoteList
     text = gets.chomp
     puts "Enter Note Status:"
     status = gets.chomp
-
     @note_array = []
     @note_array << title << text << status
     puts
@@ -23,11 +19,7 @@ class NoteList
     number_of_notes =+ 1
     @notes << @note_array
   end
-
 end
-
-#
-puts "start initialize"
 
 # initialize variables
 choice = ""
@@ -35,10 +27,10 @@ number_of_notes = 0
 notes = []
 notes << ["Test", "here is my note text", "test status"]
 
+
 # main program
 
 note_list = NoteList.new
-
 puts
 puts "Simple Note App"
 puts
@@ -60,23 +52,8 @@ until choice == 'x' do
       puts
     end
 
-    puts
-    # note_list.show
   when 'a'
     notes = note_list.add (notes)
   end
 end
 
-
-
-# test
-
-
-
-# note_list.add (notes)
-# puts "step 2 after"
-# b = gets.chomp
-
-# puts notes.inspect
-
-# start display
