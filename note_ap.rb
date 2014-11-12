@@ -2,9 +2,9 @@
 ### simple notes program
 
 class NoteList
+
   def add (notes)
     @notes = notes
-
     puts "Enter Note Title:"
     title = gets.chomp
     puts "Enter Note Text:"
@@ -14,11 +14,13 @@ class NoteList
     @note_array = []
     @note_array << title << text << status
     puts
-
     # add new note
     number_of_notes =+ 1
     @notes << @note_array
   end
+
+  # delete method to be added
+
 end
 
 # initialize variables
