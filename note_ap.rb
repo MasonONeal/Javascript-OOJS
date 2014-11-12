@@ -17,11 +17,11 @@ class NoteList
 
     @note_array = []
     @note_array << title << text << status
-    puts @note_array.inspect
+    puts
 
     # add new note
     number_of_notes =+ 1
-    notes << @note_array
+    @notes << @note_array
   end
 
 end
@@ -52,7 +52,8 @@ until choice == 'x' do
     puts
     puts "Notes list:"
     puts
-    notes.each do |note|
+    notes.each_with_index do |note, index|
+      puts "Note " + (index + 1).to_s
       puts "Title: " + note[0]
       puts "Text: " + note[1]
       puts "Text: " + note[2]
