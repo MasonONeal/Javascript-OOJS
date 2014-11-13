@@ -1,4 +1,13 @@
 
+body {
+    background-color: #e1efbb;
+    border-style: solid;
+    border-width: 2px;
+    padding: 25px;
+    border: 6px solid navy;
+    margin: 25px;
+}
+
 .divider{
     width:5px;
     height:auto;
