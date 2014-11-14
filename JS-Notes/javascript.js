@@ -13,7 +13,10 @@ var listAllNotes = function (notes) {
   console.log("test funct");
   for (index = 0; index < notes.length; ++index) {
     console.log("title: " + notes[index][0]);
+    $( "#textNoteList" ).append( "<hr />" );
     $( "#textNoteList" ).append( "<span>Title: " + notes[index][0] + "</span>" );
+    $( "#textNoteList" ).append( "<span>" + notes[index][1] + "</span>" );
+    $( "#textNoteList" ).append( "<span>Status: " + notes[index][2] + "</span>" );
   };
 }
 
