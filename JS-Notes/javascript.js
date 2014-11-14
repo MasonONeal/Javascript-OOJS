@@ -4,7 +4,7 @@
 var chioce = "";
 var numberOfNotes = 0;
 var notes = [];
-var notes = [["Title1", "This is the note text.", "Status1"],["Title2", "This is the note text 2.", "Status 2"] ]
+var notes = [["Home Life", "This is the note text.", "Home"],["Projext X", "This is the note text 2.", "Work"] ]
 
 console.log("end of init")
 
@@ -13,10 +13,11 @@ var listAllNotes = function (notes) {
   console.log("test funct");
   for (index = 0; index < notes.length; ++index) {
     console.log("title: " + notes[index][0]);
-    $( "#textNoteList" ).append( "<hr />" );
+    $( "#textNoteList" ).append( "Note " + (index + 1) + ":" );
     $( "#textNoteList" ).append( "<span>Title: " + notes[index][0] + "</span>" );
     $( "#textNoteList" ).append( "<span>" + notes[index][1] + "</span>" );
-    $( "#textNoteList" ).append( "<span>Status: " + notes[index][2] + "</span>" );
+    $( "#textNoteList" ).append( "<span>Tag: " + notes[index][2] + "</span>" );
+    $( "#textNoteList" ).append( "<hr />" );
   };
 }
 
