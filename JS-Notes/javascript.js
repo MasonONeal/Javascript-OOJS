@@ -26,6 +26,10 @@ var addNote = function (notes) {
   console.log("Add Note");
 }
 
+var deleteNote = function (notes) {
+  console.log("Delete Note");
+}
+
 // main program
 
 $(function() {
@@ -37,6 +41,6 @@ $(function() {
       addNote();
   });
   $( "#deleteNotes" ).click(function() {
-      console.log( "Delete a note" );
+      deleteNote();
   });
 });
