@@ -2,7 +2,7 @@
 // initialize variables
 
 var chioce = "";
-var numberOfNotes = 2;
+// var numberOfNotes = 2;  not needed yet, using length method on array
 var notes = [];
 var notes = [["Home Life", "This is the note text.", "Home"],["Projext X", "This is the note text 2.", "Work"] ]
 
@@ -11,6 +11,7 @@ console.log("end of init")
 // functions
 var listAllNotes = function (notes) {
   console.log("List function");
+  $( "#textNoteList" ).text("");
   for (index = 0; index < notes.length; ++index) {
     console.log("title: " + notes[index][0]);
     $( "#textNoteList" ).append( "Note " + (index + 1) + ":" );
@@ -21,7 +22,7 @@ var listAllNotes = function (notes) {
   };
 }
 
-var listAllNotes = function (notes) {
+var addNote = function (notes) {
   console.log("Add Note");
 }
 
