@@ -6,14 +6,18 @@
   </head>
 
   <body>
-    <h2 class="title">Simple Notes Ap</h2>
+    <h2 class="title">Simple Notes</h2>
     <h4>List of Notes:</h4>
     <hr />
     <div id="textNoteList"></div>
     <div id="addNoteForm">
-      Note Title: <input type="text" size="60" name="title"><br>
-      Note: <br>
-      Tag: <br>
+      Title:
+      <input type="text" name="title" size="75" ><br>
+      <br>
+      <textarea name="note" rows="7" cols="60"></textarea><br><br>
+      Tag: <input type="text" name="tag" size="75" >
+      <button type="button" id="submitNote">Add Note</button>
+      <hr />
     </div>
     <div class="buttons">
       <button type="button" id="listNotes">List Notes</button>
