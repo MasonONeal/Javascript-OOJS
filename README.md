@@ -1,4 +1,5 @@
-Javascript-OOJS
+Javascript
 ===============
 
-Object Oriented Programming in Javascript 
+Test code using Javascript  
+Will add Object Oriented Javascript 
